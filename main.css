@@ -1,0 +1,340 @@
+/* =================================
+   Coral Wiki - Main
+   ================================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #111111;
+
+    color: #ffffff;
+}
+
+
+/* =================================
+   Main
+   ================================= */
+
+
+.main-content {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 40px;
+
+}
+
+
+/* =================================
+   Hero
+   ================================= */
+
+
+.hero {
+
+    padding: 60px 0 100px;
+
+}
+
+
+.hero-subtitle {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #ff6b4a;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    margin: 0 0 24px;
+
+}
+
+
+.hero-description {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #888888;
+
+}
+
+
+/* =================================
+   Section
+   ================================= */
+
+
+.job-section,
+.model-section,
+.prompt-section {
+
+    margin-bottom: 100px;
+
+}
+
+
+.section-title {
+
+    margin-bottom: 30px;
+
+}
+
+
+.section-title h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-title p {
+
+    color: #888888;
+
+}
+
+
+/* =================================
+   Job Cards
+   ================================= */
+
+
+.job-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.job-card {
+
+    padding: 28px;
+
+    border: 1px solid #333333;
+
+    border-radius: 18px;
+
+    background: #181818;
+
+    transition: transform 0.2s;
+
+}
+
+
+.job-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.job-icon {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.job-card h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.job-card p {
+
+    color: #888888;
+
+    line-height: 1.5;
+
+}
+
+
+/* =================================
+   AI Model
+   ================================= */
+
+
+.model-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.model-card {
+
+    padding: 30px;
+
+    border: 1px solid #333333;
+
+    border-radius: 18px;
+
+    background: #181818;
+
+}
+
+
+.model-card h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 12px;
+
+}
+
+
+.model-card p {
+
+    color: #888888;
+
+    line-height: 1.5;
+
+}
+
+
+/* =================================
+   Prompt
+   ================================= */
+
+
+.prompt-card {
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    padding: 30px;
+
+    border: 1px solid #333333;
+
+    border-radius: 18px;
+
+    background: #181818;
+
+}
+
+
+.prompt-card > span {
+
+    font-size: 30px;
+
+}
+
+
+.prompt-card h3 {
+
+    margin: 0 0 10px;
+
+}
+
+
+.prompt-card p {
+
+    color: #888888;
+
+    line-height: 1.6;
+
+}
+
+
+/* =================================
+   작은 화면
+   ================================= */
+
+
+@media (max-width: 800px) {
+
+    .main-content {
+
+        padding: 50px 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .job-list {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .model-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .job-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .prompt-card {
+
+        flex-direction: column;
+
+    }
+
+}
