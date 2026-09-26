@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div {
+    width: 350px;
+
+    height: 450px;
+
+    border-width: 1px;
+    border-style: solid;
+
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.back-text, .signup-text {
+    color: gray;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 38px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-box {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+}
+
+.root-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 0px;
+
+    width: 100%;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+
+    width: 322px;
+}
+
+.email-text {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.email-help {
+    margin-bottom: 2px;
+    color: gray;
+    font-size: 14px;
+}
+
+.email-error {
+    color: rgb(255, 96, 96);
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.email-bar {
+    width: 300px;
+    height: 40px;
+    padding: 2px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    margin-top: 0px;
+}
+
+.password-text {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.password-help {
+    margin-bottom: 2px;
+    color: gray;
+    font-size: 14px;
+}
+
+.password-error {
+    color: rgb(255, 96, 96);
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.password-bar {
+    width: 300px;
+    height: 40px;
+    padding: 2px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    margin-top: 0px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-button {
+    width: 322px;
+    height: 40px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+
+    margin-top: 24px;
+
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #28354A;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #334155;
+}

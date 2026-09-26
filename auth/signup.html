@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>산호위키 - 회원가입</title>
+
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="main-div" class="main-div main-box">
+        <a href="../index.html" id="back-text" class="back-text">← 돌아가기</a>
+        <div class="logo-box">
+            <div class="logo">
+                <img src="../icon.png" alt="Logo" width="70" style="margin: 0;">
+                <h1 class="title">산호위키</h1>
+            </div>
+        </div>
+
+        <div class="root-box">
+            <div class="input-div">
+                <div class="email-text">
+                    <p class="email-help">이메일</p>
+                    <p id="email-error" class="email-error">* </p>
+                </div>
+                <input type="email" id="email-bar" class="email-bar sub-box">
+            </div>
+            
+            <div class="input-div">
+                <div class="password-text">
+                    <p class="password-help">비밀번호</p>
+                    <p id="password-error" class="password-error">* </p>
+                </div>
+                <input type="password" id="password-bar" class="password-bar sub-box">
+            </div>
+
+            <div class="input-div">
+                <div class="password-check-text">
+                    <p class="password-check-help">비밀번호 확인</p>
+                    <p id="password-check-error" class="password-check-error">* </p>
+                </div>
+                <input type="password" id="password-check-bar" class="password-check-bar sub-box">
+            </div>
+            
+            <div class="signup-box">
+                <button id="signup-button" class="signup-button sub-box">회원가입</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+            "firebase/app": "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js"
+            }
+        }
+    </script>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>
