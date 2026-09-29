@@ -79,6 +79,45 @@ body {
     border-radius: 5px;
 }
 
+.account-div {
+    position: relative;
+}
+
+.account-button {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.account-menu {
+    position: absolute;
+    top: 120%;
+    width: 150px;
+    right: 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.logout-button {
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
 .title {
     font-size: 24px;
     margin-left: 5px;
@@ -87,6 +126,22 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    user-select: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.search-box {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.search-box-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 button:hover {
